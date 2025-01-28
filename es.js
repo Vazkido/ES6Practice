@@ -66,4 +66,4 @@ for (let i = 0; i < products; i++) {
 }
 
 //ES6
-
+const filterProducts = () => products.filter(products => products.price < 10);
