@@ -65,7 +65,7 @@
 // }
 
 //ES6
-// const filterProducts = () => products.filter(products => products.price < 10);
+// const filterProducts = () => products.filter(product => product.price < 10);
 //END
 
 //START
@@ -77,10 +77,15 @@ const products = [
 ];
 
 // JavaScript
-function changeProducts () {
-    for(let i = 0; i < products.length; i++) {
-        products[i].price += 2
-    }
-    return products
-}
+// function changeProducts () {
+//     for(let i = 0; i < products.length; i++) {
+//         products[i].price += 2
+//     }
+//     return products
+// }
 
+//ES6
+const changeProducts = () =>
+  products.map((product) => ({ ...product, price: product.price + 2 }));
+console.log(changeProducts());
+console.log(products);
