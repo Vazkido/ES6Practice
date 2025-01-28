@@ -23,3 +23,8 @@ function findPerson(name) {
     }
   }
 }
+
+//ES6
+function findPerson(name) {
+return people.find(person =>person.name == name)
+}
