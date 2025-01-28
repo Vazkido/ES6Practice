@@ -8,3 +8,5 @@ if (i !== people.length) {
 } else {
     alert ('Cannot find Jack')
 }
+
+// This array is meant to find Jack inside variable people, if not, cannot find jack. Open this in life server.
