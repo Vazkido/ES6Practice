@@ -1,4 +1,5 @@
 // This array is meant to find Jack inside variable people, if not, cannot find jack. Open this in life server.
+
 //START
 // const people = [{name: 'Max'}, {name: 'Jack'}, {name: 'Marry'}];
 // let i = 0;
@@ -13,7 +14,7 @@
 //END
 
 //START
-/* THE BELOW ARRAY FUNCTION IS USED TO THE THE FIND FUNCTION BOTH IN JAVASCRIPT AND ES6 */
+/* THE BELOW ARRAY FUNCTION IS USED TO THE FIND FUNCTION BOTH IN JAVASCRIPT AND ES6 */
 
 // const people = [{ name: "Max" }, { name: "Jack" }, { name: "Marry" }];
 // //JavaScript
@@ -33,14 +34,36 @@
 
 //END
 
+
 //START
-const people = [{ name: "Max" }, { name: "Jack" }, { name: "Marry" }];
+/* THE BELOW ARRAY FUNCTION IS USED TO TEST THE forEach FUNCTION BOTH IN JAVASCRIPT AND ES6 */
+
+// const people = [{ name: "Max" }, { name: "Jack" }, { name: "Marry" }];
 // JavaScript
-function showEachOne(name) {
-  for (let i = 0; i < people.length; i++) {
-    alert(people[i].name);
-  }
-}
+// function showEachOne(name) {
+//   for (let i = 0; i < people.length; i++) {
+//     alert(people[i].name);
+//   }
+// }
 
 // ES6
-const showEachOne = name => people.forEach(person => alert(person.name));
+// const showEachOne = name => people.forEach(person => alert(person.name));
+
+//END
+
+//START
+/* THE BELOW ARRAY FUNCTION IS USED TO TEST THE filter FUNCTION BOTH IN JAVASCRIPT AND ES6 */
+
+const products = [{name: "Milk", price:15}, {name:"Water", price:9}, {name:"Bread", price:5}];
+// JavaScript
+function filterProducts() {
+    let cheapProducts = [];
+for (let i = 0; i < products; i++) {
+
+    if(products[i].price < 10) cheapProducts.push(products[i]);
+    }
+    return cheapProducts;
+}
+
+//ES6
+
