@@ -34,7 +34,6 @@
 
 //END
 
-
 //START
 /* THE BELOW ARRAY FUNCTION IS USED TO TEST THE forEach FUNCTION BOTH IN JAVASCRIPT AND ES6 */
 
@@ -54,16 +53,34 @@
 //START
 /* THE BELOW ARRAY FUNCTION IS USED TO TEST THE filter FUNCTION BOTH IN JAVASCRIPT AND ES6 */
 
-const products = [{name: "Milk", price:15}, {name:"Water", price:9}, {name:"Bread", price:5}];
+// const products = [{name: "Milk", price:15}, {name:"Water", price:9}, {name:"Bread", price:5}];
 // JavaScript
-function filterProducts() {
-    let cheapProducts = [];
-for (let i = 0; i < products; i++) {
+// function filterProducts() {
+//     let cheapProducts = [];
+// for (let i = 0; i < products; i++) {
 
-    if(products[i].price < 10) cheapProducts.push(products[i]);
-    }
-    return cheapProducts;
-}
+//     if(products[i].price < 10) cheapProducts.push(products[i]);
+//     }
+//     return cheapProducts;
+// }
 
 //ES6
-const filterProducts = () => products.filter(products => products.price < 10);
+// const filterProducts = () => products.filter(products => products.price < 10);
+//END
+
+//START
+/* THE BELOW ARRAY FUNCTION IS USED TO TEST THE MAP FUNCTION BOTH IN JAVASCRIPT AND ES6 */
+const products = [
+  { name: "Milk", price: 15 },
+  { name: "Water", price: 9 },
+  { name: "Bread", price: 5 },
+];
+
+// JavaScript
+function changeProducts () {
+    for(let i = 0; i < products.length; i++) {
+        products[i].price += 2
+    }
+    return products
+}
+
