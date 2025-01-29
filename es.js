@@ -93,7 +93,11 @@ const products = [
 
 //START
 /* THE BELOW ARRAY FUNCTION IS USED TO TEST THE REDUCE FUNCTION AND ES6 */
-const data = [5, 10, 15, 20, 25];
-const res = data.reduce((total, currentValue) => total + currentValue);
-console.log(res);
 
+// const data = [5, 10, 15, 20, 25];
+// const res = data.reduce((total, currentValue) => total + currentValue);
+// console.log(res);
+//END
+
+//START
+/* THE BELOW  ES6 */
