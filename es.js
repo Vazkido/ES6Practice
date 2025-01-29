@@ -85,7 +85,15 @@ const products = [
 // }
 
 //ES6
-const changeProducts = () =>
-  products.map((product) => ({ ...product, price: product.price + 2 }));
-console.log(changeProducts());
-console.log(products);
+// const changeProducts = () =>
+//   products.map((product) => ({ ...product, price: product.price + 2 }));
+// console.log(changeProducts());
+// console.log(products);
+//END
+
+//START
+/* THE BELOW ARRAY FUNCTION IS USED TO TEST THE REDUCE FUNCTION AND ES6 */
+const data = [5, 10, 15, 20, 25];
+const res = data.reduce((total, currentValue) => total + currentValue);
+console.log(res);
+
