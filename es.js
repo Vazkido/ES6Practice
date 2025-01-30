@@ -100,4 +100,9 @@ const products = [
 //END
 
 //START
-/* THE BELOW  ES6 */
+/* THE BELOW ES6 is an example on Object access chain */
+
+let student = {address: {city:'New York', country: 'USA'}}
+
+console.log(student.address.city) // New York
+console.log(student,address,country) // USA
