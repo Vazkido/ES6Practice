@@ -102,7 +102,21 @@ const products = [
 //START
 /* THE BELOW ES6 is an example on Object access chain */
 
-let student = {address: {city:'New York', country: 'USA'}}
+// let student = {address: {city:'New York', country: 'USA'}}
 
-console.log(student.address.city) // New York
-console.log(student,address,country) // USA
+// console.log(student.address.city) // New York
+// console.log(student,address,country) // USA
+
+//END
+
+//START
+/* THE BELOW ES6 is an example on Problem of copying objects (reference) */
+
+let array1 = [1,2,3];
+let array2 = [4,5,6];
+// Using ES5
+array1 = array1.concat(array2);
+console.log (array1)// [1,2,3,4,5,6,4,5,6]
+//Using ES6
+array1 = [...array1, ...array2];
+console.log(array1)// [1,2,3,4,5,6,4,5,6]
