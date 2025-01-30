@@ -112,11 +112,29 @@ const products = [
 //START
 /* THE BELOW ES6 is an example on Problem of copying objects (reference) */
 
-let array1 = [1,2,3];
-let array2 = [4,5,6];
-// Using ES5
-array1 = array1.concat(array2);
-console.log (array1)// [1,2,3,4,5,6,4,5,6]
-//Using ES6
-array1 = [...array1, ...array2];
-console.log(array1)// [1,2,3,4,5,6,4,5,6]
+// let array1 = [1,2,3];
+// let array2 = [4,5,6];
+// // Using ES5
+// array1 = array1.concat(array2);
+// console.log (array1)// [1,2,3,4,5,6,4,5,6]
+// //Using ES6
+// array1 = [...array1, ...array2];
+// console.log(array1)// [1,2,3,4,5,6,4,5,6]
+//END
+
+//START
+/* THE BELOW ES6 is an example on Creating two copies of an objects (reference) */
+let object1 = { firstName: 'John', lastName: 'Brown' }
+let object2 = { age: 25}
+
+let newObject1 = { ...object1, ...object2 }
+console.log(newObject1)
+/* {
+firstName: "John",
+lastName: "Brown",
+age:25
+} */
+
+
+
+
